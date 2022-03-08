@@ -37,7 +37,8 @@ export default {
           return 0;
         }
       }
-      let result = await axios.post(`${window.base_url}/register`,this.formData);
+      // let result = await axios.post(`${window.base_url}/register`,this.formData);
+      let result = await axios.post(`/register`,this.formData);
       if(result.status==201){
         localStorage.setItem('user',JSON.stringify(result.data))
         this.$router.push({name:'Home'})

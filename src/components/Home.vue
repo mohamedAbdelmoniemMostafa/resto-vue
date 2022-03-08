@@ -46,13 +46,15 @@ export default {
   },
   methods:{
      async getRestaurants(){
-       let restaurants = await axios.get(`${window.base_url}/restaurants`);
+      //  let restaurants = await axios.get(`${window.base_url}/restaurants`);
+       let restaurants = await axios.get(`/restaurants`);
        if (restaurants.status==200){
          this.restaurants = restaurants.data;
        }
     },
     async delRestaurant(id){
-       let result = await axios.delete(`${window.base_url}/restaurants/${id}`)
+      //  let result = await axios.delete(`${window.base_url}/restaurants/${id}`)
+       let result = await axios.delete(`/restaurants/${id}`)
        if(result.status == 200){
          this.getRestaurants();
        }
