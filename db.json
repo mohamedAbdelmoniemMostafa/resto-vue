@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "email": "olivier@u.com",
+      "password": "$2a$10$VGiExQCgnBNk1Djg4JD02.6uDmdu9.RG8dF1NIknIBqw3//ughceK",
+      "name": "Olivier",
+      "age": 32,
+      "id": 1
+    },
+    {
+      "email": "mody@u.com",
+      "password": "$2a$10$4pfIR/qUj9VLnMDN1isXLuBbM28xGWhNPtA3aEwB/cDm3wDRw7aVK",
+      "name": "mody",
+      "age": 32,
+      "id": 2
+    },
+    {
+      "email": "ahmed@u.com",
+      "password": "$2a$10$46RMGLCpwox78BmIxSP5HeW72b08GJb5XVEPKjCKhVIg6wUk1Togy",
+      "name": "ahmed",
+      "age": 23,
+      "id": 3
+    },
+    {
+      "email": "hady@u.com",
+      "password": "$2a$10$8BXpTJdF6WDyhmXVO5.Ztuebbvc7cjQIlwZpZeQ6o/M6vUlme9Bde",
+      "name": "hady",
+      "id": 4
+    },
+    {
+      "email": "hossam@u.com",
+      "password": "$2a$10$89Ra4yz3NlHwVgmTlxlCku1JKAgFQ4Cj7VUfeXfSnFX1Zvj2Ils.u",
+      "name": "hossam",
+      "id": 5
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Birger King",
+      "contact": 1111,
+      "address": "str1"
+    },
+    {
+      "id": 2,
+      "name": "Dominos Pizza",
+      "contact": 22222,
+      "address": "str2"
+    },
+    {
+      "id": 3,
+      "name": "KFC",
+      "contact": 333,
+      "address": "str3"
+    },
+    {
+      "id": 4,
+      "name": "Mac donals",
+      "contact": 444,
+      "address": "str4"
+    },
+    {
+      "name": "elmohamady",
+      "contact": "012",
+      "address": "str5",
+      "id": 5
+    }
+  ]
+}
