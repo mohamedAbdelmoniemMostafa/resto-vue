@@ -36,8 +36,7 @@ export default {
          return 0;
        }
      }
-    //  let result = await axios.post(`${window.base_url}/restaurants`,this.formData);
-     let result = await axios.post(`/restaurants`,this.formData);
+     let result = await axios.post(`${window.base_url}/restaurants`,this.formData);
      if(result.status==201){
        this.$router.push({name:'Home'});
      }else{

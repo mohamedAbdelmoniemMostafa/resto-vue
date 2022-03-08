@@ -31,16 +31,14 @@ export default {
   },
   methods:{
     async update(){
-      // let result = await axios.put(`${window.base_url}/restaurants/${this.formData.id}`,this.formData)
-      let result = await axios.put(`/restaurants/${this.formData.id}`,this.formData)
+      let result = await axios.put(`${window.base_url}/restaurants/${this.formData.id}`,this.formData)
       if(result.status == 200){
         this.formData = result.data
         this.$router.push({name:"Home"})
       }
     },
     async getRestaurant(id){
-      // let result = await axios.get(`${window.base_url}/restaurants/${id}`);
-      let result = await axios.get(`/restaurants/${id}`);
+      let result = await axios.get(`${window.base_url}/restaurants/${id}`);
       if(result.status == 200){
         this.formData = result.data
       }

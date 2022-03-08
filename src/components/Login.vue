@@ -34,8 +34,7 @@ export default {
           return 0;
         }
       }
-      // let result = await axios.post(`${window.base_url}/login`,this.formData);
-      let result = await axios.post(`/login`,this.formData);
+      let result = await axios.post(`${window.base_url}/login`,this.formData);
 
     if(result.status==200){
          localStorage.setItem('user',JSON.stringify(result.data))
