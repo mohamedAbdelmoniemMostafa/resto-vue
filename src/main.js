@@ -4,7 +4,7 @@ import {router} from './routers.js'
 
 
 // window.base_url = 'http://localhost:3000';
-window.base_url = 'https://mo-resto.herokuapp.com/';
+window.base_url = 'https://mo-resto.herokuapp.com/api';
 
 const app = createApp(App);
 app.use(router);
