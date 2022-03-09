@@ -1,14 +1,14 @@
-// const express = require('express')
+const express = require('express')
 const serverStatic = require('serve-static')
 const path = require('path')
-// const app = express();
-// app.use('/',serverStatic(path.join(__dirname,'/dist')))
+const app = express();
+app.use('/',serverStatic(path.join(__dirname,'/dist')))
 
-// const port = process.env.PORT || 8080
+const port = process.env.PORT || 8080
 
-// app.listen(port)
+app.listen(port)
 
-// console.log('listen on port : '+ port);
+console.log('listen on port : '+ port);
 
 
 const data = require('./db.json');
@@ -24,7 +24,7 @@ server.use(authServer);
 // server.use(jsonServer.rewriter({
 //   '/api/*': '/$1',
 // }))
-server.use('/',serverStatic(path.join(__dirname,'/dist')));
+// server.use('/',serverStatic(path.join(__dirname,'/dist')));
 server.use(router);
 server.listen(db_port, () => {
   console.log('data is running on port : '+db_port);
