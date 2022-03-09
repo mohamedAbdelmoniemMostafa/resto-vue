@@ -1,8 +1,8 @@
-// const express = require('express')
+const express = require('express')
 const serverStatic = require('serve-static')
 const path = require('path')
-// const app = express();
-// app.use('/',serverStatic(path.join(__dirname,'/dist')))
+const app = express();
+app.use('/',serverStatic(path.join(__dirname,'/dist')))
 
 // const port = process.env.PORT || 8080
 
@@ -24,7 +24,7 @@ server.use(authServer);
 // server.use(jsonServer.rewriter({
 //   '/api/*': '/$1',
 // }))
-server.use('/',serverStatic(path.join(__dirname,'/dist')));
+// server.use('/',serverStatic(path.join(__dirname,'/dist')));
 server.use(router);
 server.listen(db_port, () => {
   console.log('data is running on port : '+db_port);
