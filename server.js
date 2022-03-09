@@ -18,6 +18,7 @@ const server = jsonServer.create();
 const router = jsonServer.router(data);
 const middlewares = jsonServer.defaults();
 const db_port = process.env.PORT || 8282;
+server.db = router.db
 server.use(authServer);
 
 // server.use(jsonServer.rewriter({
