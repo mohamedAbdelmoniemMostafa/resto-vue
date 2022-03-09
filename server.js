@@ -14,18 +14,18 @@ console.log('listen on port : '+ port);
 const data = require('./db.json');
 const authServer = require('json-server-auth');
 const jsonServer = require('json-server');
-const server = jsonServer.create();
+// const server = jsonServer.create();
 const router = jsonServer.router(data);
 // const middlewares = jsonServer.defaults();
 // const db_port = process.env.PORT || 8282;
-server.db = router.db
-server.use(authServer);
+app.db = router.db
+app.use(authServer);
 
 // server.use(jsonServer.rewriter({
 //   '/api/*': '/$1',
 // }))
 // server.use('/',serverStatic(path.join(__dirname,'/dist')));
-server.use(router);
+app.use(router);
 // server.listen(db_port, () => {
 //   console.log('data is running on port : '+db_port);
 // });
