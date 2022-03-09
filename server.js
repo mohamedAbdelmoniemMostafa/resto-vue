@@ -12,13 +12,14 @@ console.log('listen on port : '+ port);
 
 
 const data = require('./db.json');
-const authServer = require('json-server-auth');
 const jsonServer = require('json-server');
+const authServer = require('json-server-auth');
 // const server = jsonServer.create();
 const router = jsonServer.router(data);
 // const middlewares = jsonServer.defaults();
 // const db_port = process.env.PORT || 8282;
 app.db = router.db
+app.use(jsonServer);
 app.use(authServer);
 
 // server.use(jsonServer.rewriter({
